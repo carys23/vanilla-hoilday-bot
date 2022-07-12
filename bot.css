@@ -1,0 +1,84 @@
+html, body {
+    display: flex;
+    margin:0px;
+  }
+
+.bot{
+    display: flex;
+    background-color: rgb(228, 235, 235);
+    width: 20%;
+    height: 22%;
+    position: absolute;
+    bottom: 5px; 
+    right: 5px;
+    display: inline-block; 
+    border-style: groove ;
+    border-radius: 25px;
+}
+
+
+
+.bot-image{
+    display: flex;
+    width: 65px;
+    height: 65px;
+    /* align-items: center; */
+    padding: 3px;
+    /* flex-direction: row; */
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    position: absolute;
+
+}
+
+.b{
+    display: flex;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Raleway';
+    background-color: azure;
+    margin-top: 5px;
+    border-radius: 15px;
+    flex-direction: row;
+}
+
+
+.b:hover{
+    background-color: black;
+    color: white;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+
+
+h1 {
+    display: flex;
+    font-size: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 900px;
+    height: 30px;
+}
+
+.response {
+    display: flex;
+    /* margin-left: 6px;
+    margin-right: 6px; */
+    padding: 8px;
+    background-color: white;
+
+}
