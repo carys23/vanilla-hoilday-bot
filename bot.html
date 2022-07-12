@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bot.css">
+
+    <script type="module" scr="/csv.mjs"></script>
+    <script type="module" scr="/test.mjs"></script>
     <div class="main-div">
     <title>bot</title>
 
@@ -13,14 +16,7 @@
 
     <script type="module" scr="/csv.mjs"></script>
     <script type="module" scr="/test.mjs"></script>
-    <script type="module">
-        import { myfunc } from './test.mjs';
-        // alert('hello');
 
-        myfunc()
-
-
-    </script>
 </head>
 <body>
     <main class="main-div">
@@ -32,19 +28,40 @@
             <img class="bot-image" src="./monkey.png" alt="bot-image">
             <div class="response">Hello what location would you like to take your holiday in? </div> 
             <buttons class="buttons">
-                <button class="b">Africa</button>
-                <button class="b">Asia</button>
-                <button class="b">Australia</button>
-                <button class="b" >North America</button>
-                <button class="b">Europe</button>
-                <button class="b">Antarctica</button>
-                <button class="b">Arctic</button>
+                <button class="b"id="africa"></button>
+                
+            <button class="b" id="asia"></button>
+                <button class="b" id="aus"></button>
+                <button class="b" id="northA" ></button>
+                <button class="b" id="eur"></button>
+                <button class="b" id="ant"></button>
+                <button class="b" id="arc"></button> 
+            </button>
+
+                <script type="module">
+                    import { africa } from './test.mjs';
+                    import { asia } from './test.mjs';
+                    import { aus } from './test.mjs';
+                    import { northA } from './test.mjs';
+                    import { eur } from './test.mjs';
+                    import { ant } from './test.mjs';
+                    import { arc } from './test.mjs';
+    
+                    africa();
+                    asia(); 
+                    aus();
+                    northA();
+                    eur(); 
+                    ant(); 
+                    arc();
+            
+            
+                </script>
+                
             </buttons>
 
-        
-        </div>
     </bot>
- 
+
     </main>
 </body>
 </html>
